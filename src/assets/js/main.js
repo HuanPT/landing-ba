@@ -79,7 +79,28 @@ function addHandlerSubmit(form, handler) {
   });
 }
 
+const $navbarLinks = $(".navbar-nav>li>a");
+const $navbarToggler = $(".navbar-toggler");
+
 window.addEventListener("load", () => {
+  // Scroll active navbar
+  $(window).on("scroll", function () {
+    const scrollPosition = $(this).scrollTop();
+
+    $navbarLinks.each(function () {
+      const target = $($(this).attr("href"));
+      const targetPosition = target.offset().top - 1;
+      const targetHeight = target.outerHeight();
+
+      if (
+        targetPosition <= scrollPosition &&
+        targetPosition + targetHeight > scrollPosition
+      ) {
+        $navbarLinks.removeClass("active");
+        $(this).addClass("active");
+      }
+    });
+  });
   checkErr(email, "Email không đúng");
   checkErr(phone, "Số điện thoại không đúng");
   checkErr(username, "Tên không được để trống");
