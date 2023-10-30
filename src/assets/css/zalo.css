@@ -1,0 +1,22 @@
+/* Zalo */
+
+
+/* CALL NOW */
+#callNow {
+    position: fixed;
+    right: 25px;
+    bottom: 120px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 10;
+    animation: waveRotate 1.5s linear infinite;
+}
+
+.call__icon {
+    width: 24px;
+}

@@ -1,0 +1,94 @@
+#teacher {
+    /* max-height: 120vh;
+    overflow: scroll; */
+    position: relative;
+    background-image: url("/img/bgTeacher.png");
+    background-size: cover;
+    background-position: 50% 0%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    padding-bottom: 24px;
+}
+
+/* 
+#teacher::-webkit-scrollbar {
+    display: none;
+} */
+
+.card__teacher {
+    border-radius: 25px;
+    max-width: 295px;
+    margin-inline: auto;
+    background: var(--white-color);
+    box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.6);
+}
+
+.img__content,
+.card__teacher-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.img__content {
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--blue-mid-color);
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: var(--blue-mid-color);
+}
+
+.overlay::after {
+    border-radius: 0 25px 0 0;
+    background-color: var(--white-color);
+}
+
+.card__image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: var(--white-color);
+    padding: 3px;
+}
+
+.card__image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--blue-mid-color);
+}
+
+.card__name {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--black-color);
+}
+
+.card__description {
+    font-size: 14px;
+    color: var(--black-color);
+    text-align: center;
+}

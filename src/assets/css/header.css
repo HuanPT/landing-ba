@@ -1,0 +1,38 @@
+#header {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+
+#header .navbar {
+    margin: 0 auto;
+    color: var(--white-color);
+}
+
+#header .navbar-brand {
+    max-width: 120px;
+}
+
+.navbar>* {
+    text-align: center;
+    color: var(--white-color);
+}
+
+.navbar-nav>.nav-item>.nav-link {
+    display: inline-block;
+    color: var(--white-color);
+}
+
+.menu__icon {
+    width: 30px;
+    height: 30px;
+}
+
+.nav-link.active {
+    font-weight: 500;
+    color: var(--primary-color) !important;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.navbar-toggler {
+    border: 0;
+}

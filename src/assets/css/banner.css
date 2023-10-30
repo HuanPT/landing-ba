@@ -1,0 +1,30 @@
+.banner {
+    position: relative;
+}
+
+.btn-banner {
+    position: absolute;
+    left: 72%;
+    right: 0;
+    top: 50%;
+    bottom: 0;
+}
+
+@media screen and (max-width:992px) {
+    .btn-banner {
+        left: 68%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .btn-banner {
+        left: 70%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .btn-banner {
+        left: 60%;
+        top: 26%
+    }
+}

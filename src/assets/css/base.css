@@ -1,0 +1,265 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #fff;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    --primary-color: #F98125;
+    --orange-light-color: #FB9B50;
+    --techmaster-color: #00afef;
+    --blue-color: #11224D;
+    --blue-mid-color: #19336F;
+    --blue-light-color: #5B84C4;
+    --white-color: #f5f5f5;
+    --black-color: #393939;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* scrollbar-gutter: stable; */
+}
+
+body {
+    background-position: 50% 0%;
+    background-repeat: repeat;
+    overflow: auto;
+    margin: 0 auto;
+    /* background: #ccc;
+    padding-bottom: 52px; */
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+}
+
+input,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    outline: none;
+    border: 0;
+    color: inherit;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    border: none;
+    outline: none;
+}
+
+main {
+    padding-block: 70px 40px;
+}
+
+div[class $="__title"] {
+    padding-block: 52px;
+    text-align: center;
+}
+
+div[class $="__title"]>* {
+    margin: 0;
+    min-width: 370px;
+    min-height: 50px;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 24px;
+    display: inline-block;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.container-fluid {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* 
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-inline: 12px;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+    padding-inline: 30px;
+}
+
+.show {
+    display: block !important;
+}
+
+.hidden {
+    display: none !important;
+} */
+.btn__youtube,
+.btn__facebook {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn {
+    gap: 12px;
+    width: 123px;
+    height: 43px;
+    border-radius: 4px;
+}
+
+.btn__video {
+    border-radius: 12px;
+    flex-direction: column;
+    padding: 4px 20px;
+    background: var(--blue-light-color);
+    /* background: var(--primary-color); */
+}
+
+.btn,
+.btn__video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    background-image: linear-gradient(-60deg, transparent, transparent 40%, #ffffff44 40%, #ffffff44 60%, transparent 60%, transparent 100%);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-position-x: 150%;
+    box-shadow: 2px 2px 10px rgba(0 0 0 .15);
+}
+
+
+.btn__facebook {
+    padding: 0;
+    color: #1178f2;
+    font-size: 40px;
+}
+
+.btn__facebook:hover {
+    color: #1178f2;
+}
+
+.btn__youtube {
+    color: #ff0000;
+    padding: 0;
+    font-size: 40px;
+}
+
+.btn__youtube:hover {
+    color: #ff0000;
+}
+
+.btn__youtube:after,
+.btn__facebook:after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -70%;
+    width: 120%;
+    height: 50%;
+    transform: rotate(-35deg);
+    background: #fff;
+    opacity: 0.2;
+    transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn__primary:hover:after,
+.btn__youtube:hover:after,
+.btn__facebook:hover:after {
+    left: 50%;
+    top: 120%;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn:hover,
+.btn__video:hover {
+    background-position-x: -150%;
+    transition: background-position-x 1000ms;
+}
+
+.btn-primary,
+.btn.btn-primary:hover {
+    font-weight: 500;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn-blue,
+.btn.btn-blue:hover {
+    font-weight: 500;
+    color: var(--white-color);
+    background-color: var(--blue-color);
+}
+
+@media (min-width: 768px) {
+    .btn {
+        height: 47px;
+        width: 174px;
+    }
+}

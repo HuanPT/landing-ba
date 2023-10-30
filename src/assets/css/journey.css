@@ -1,0 +1,173 @@
+#journey {
+    position: relative;
+    background-image: url("/img/bgJourney.jpg");
+    background-size: cover;
+    background-position: 50% 0%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    padding-bottom: 24px;
+}
+
+/* Timeline */
+.timeline-centered {
+    position: relative;
+    /* margin-bottom: 30px; */
+}
+
+.timeline-centered:before,
+.timeline-centered:after {
+    content: " ";
+    display: table;
+}
+
+.timeline-centered:after {
+    clear: both;
+}
+
+.timeline-centered:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4px;
+    background: var(--orange-light-color);
+    top: 40px;
+    bottom: 50px;
+    margin-left: 29px;
+}
+
+.timeline-centered .timeline-entry {
+    position: relative;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner {
+    position: relative;
+    margin-left: -20px;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 0 0 5px #ccc;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon i {
+    color: #fff;
+}
+
+/* .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon img {
+    object-fit: contain;
+} */
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-1 {
+    background: #31aa52;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-2 {
+    background: var(--white-color);
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
+    position: relative;
+    background: var(--orange-light-color);
+    padding-inline: 24px;
+    margin-left: 60px;
+    background-clip: padding-box;
+    margin-bottom: 5px;
+    border-radius: 20px;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 9px 9px 0;
+    border-color: transparent var(--orange-light-color) transparent transparent;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: -8px;
+}
+
+.timeline-label ol li+li,
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p+p {
+    margin-top: 15px;
+}
+
+.timeline-label ol {
+    padding-inline: 24px;
+}
+
+.timeline-label ol li,
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p {
+    font-size: 15px;
+    color: #fff;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+    padding-inline: 0;
+    padding-block: 24px;
+    background-color: transparent;
+}
+
+#journey .nav-link {
+    color: #000;
+}
+
+#journey #accordionExample {
+    background-color: transparent;
+}
+
+.accordion-button,
+.accordion-item {
+    color: #fff;
+    border-radius: 5px;
+}
+
+.accordion-button {
+    background-color: var(--secondary-color);
+}
+
+.accordion-item {
+    margin-block: 10px;
+    border-color: transparent;
+    background-color: var(--techmaster-color);
+}
+
+.accordion-button:focus {
+    border: 0;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    background-color: var(--techmaster-color);
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFFFFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFFFFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+}
+
+.accordion-body ul {
+    list-style: circle;
+    margin: 0;
+}
