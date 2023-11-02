@@ -6,6 +6,7 @@
     background-repeat: repeat;
     background-attachment: fixed;
     padding-bottom: 24px;
+    overflow: hidden;
 }
 
 /* Timeline */
@@ -113,7 +114,7 @@
     color: #fff;
 }
 
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label button {
     font-size: 20px;
     font-weight: 600;
     color: #fff;

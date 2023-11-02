@@ -8,6 +8,13 @@ import {
 const TIMEOUT_SEC = 10;
 const API_URL = "https://techmaster.vn/submit-advisory";
 
+export function backToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
 export function isEmailValid(value) {
   const regex = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
   return regex.test(value);
@@ -123,3 +130,30 @@ export const postRegister = async function (data) {
     throw error;
   }
 };
+
+export function updateIcon() {
+  const $navbarToggler = $(".navbar-toggler");
+  const $iconUse = $navbarToggler.find("use");
+  const isExpanded = $navbarToggler.attr("aria-expanded") === "true";
+
+  $("body").css("overflow", isExpanded ? "hidden" : "auto");
+
+  $iconUse.attr(
+    "href",
+    isExpanded ? "/img/icon.svg#icon-xmark" : "/img/icon.svg#icon-menu"
+  );
+}
+
+export function backGoToTop() {
+  const btnBackToTop = document.querySelector(".gototop");
+  window.addEventListener("scroll", () => {
+    if (document.documentElement.scrollTop > 600) {
+      btnBackToTop.style.transform = "translateY(0)";
+    } else {
+      btnBackToTop.style.transform = "translateY(75px)";
+    }
+  });
+  btnBackToTop.addEventListener("click", () => {
+    backToTop();
+  });
+}

@@ -10,10 +10,12 @@ import { setupCounter } from "@js/counter.js";
 
 import "bootstrap/dist/js/bootstrap.bundle";
 import {
+  backGoToTop,
   checkInputs,
   isEmailValid,
   isPhoneNumber,
   postRegister,
+  updateIcon,
 } from "./helpers";
 import { setError, setSuccess, showErrorToast } from "./toast";
 
@@ -89,7 +91,7 @@ window.addEventListener("load", () => {
 
     $navbarLinks.each(function () {
       const target = $($(this).attr("href"));
-      const targetPosition = target.offset().top - 1;
+      const targetPosition = target.offset().top - 40;
       const targetHeight = target.outerHeight();
 
       if (
@@ -101,11 +103,27 @@ window.addEventListener("load", () => {
       }
     });
   });
+
+  // Click hidden navbar mobile
+  $navbarLinks.on("click", function () {
+    if (window.innerWidth < 992) {
+      $navbarToggler.click();
+      updateIcon();
+    }
+  });
+
+  // // Toggle icon
+  $navbarToggler.on("click", function () {
+    updateIcon();
+  });
+
   checkErr(email, "Email không đúng");
   checkErr(phone, "Số điện thoại không đúng");
   checkErr(username, "Tên không được để trống");
 
   addHandlerSubmit(form, postRegister);
+
+  backGoToTop();
 
   Fancybox.bind();
   AOS.init();

@@ -1,6 +1,7 @@
 /* Contact */
 #contact {
     background-color: var(--white-color);
+    padding-block: 60px;
 }
 
 .svg__icon {
@@ -42,7 +43,7 @@
 }
 
 .media__content {
-    margin-left: 20px;
+    margin-inline: 25px;
     display: flex;
     justify-content: space-between;
 }

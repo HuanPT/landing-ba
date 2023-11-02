@@ -1,4 +1,5 @@
-.animated-button {
+.animated-button,
+.animated-button-1 {
     display: inline-block;
     transform: translate(0%, 0%);
     overflow: hidden;
@@ -10,7 +11,8 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.animated-button::before {
+.animated-button::before,
+.animated-button-1::before {
     content: '';
     position: absolute;
     top: 0px;
@@ -19,21 +21,12 @@
     height: 100%;
     background-color: #ad8585;
     opacity: 0;
-    -webkit-transition: .2s opacity ease-in-out;
     transition: .2s opacity ease-in-out;
 }
 
+.animated-button-1 span,
 .animated-button span {
     position: absolute;
-}
-
-.animated-button span:nth-child(1) {
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(to left, rgba(43, 8, 8, 0), #d92626);
-    animation: 2s animateTop linear infinite;
 }
 
 @keyframes animateTop {
@@ -46,14 +39,6 @@
     }
 }
 
-.animated-button span:nth-child(2) {
-    top: 0px;
-    right: 0px;
-    height: 100%;
-    width: 2px;
-    background: linear-gradient(to top, rgba(43, 8, 8, 0), #d92626);
-    animation: 2s animateRight linear -1s infinite;
-}
 
 @keyframes animateRight {
     0% {
@@ -65,14 +50,6 @@
     }
 }
 
-.animated-button span:nth-child(3) {
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(to right, rgba(43, 8, 8, 0), #d92626);
-    animation: 2s animateBottom linear infinite;
-}
 
 @keyframes animateBottom {
     0% {
@@ -82,15 +59,6 @@
     100% {
         transform: translateX(100%);
     }
-}
-
-.animated-button span:nth-child(4) {
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 2px;
-    background: linear-gradient(to bottom, rgba(43, 8, 8, 0), #d92626);
-    animation: 2s animateLeft linear -1s infinite;
 }
 
 @keyframes animateLeft {
@@ -104,67 +72,71 @@
 }
 
 /* animation button 1 */
-.animated-button-1 {
-    display: inline-block;
-    transform: translate(0%, 0%);
-    overflow: hidden;
-    color: #f7d4d4;
-    /* font-size: 20px; */
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-}
 
-.animated-button-1::before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: #ad8585;
-    opacity: 0;
-    -webkit-transition: .2s opacity ease-in-out;
-    transition: .2s opacity ease-in-out;
-}
-
-.animated-button-1 span {
-    position: absolute;
-}
-
+.animated-button span:nth-child(1),
 .animated-button-1 span:nth-child(1) {
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 2px;
-    background: linear-gradient(to left, rgba(43, 8, 8, 0), #11224D);
+    height: 2.5px;
     animation: 2s animateTop linear infinite;
 }
 
+.animated-button span:nth-child(1) {
+    background: linear-gradient(to left, rgba(43, 8, 8, 0), #d92626);
+}
+
+.animated-button-1 span:nth-child(1) {
+    background: linear-gradient(to left, rgba(43, 8, 8, 0), #11224D);
+}
+
+.animated-button span:nth-child(2),
 .animated-button-1 span:nth-child(2) {
     top: 0px;
     right: 0px;
     height: 100%;
-    width: 2px;
-    background: linear-gradient(to top, rgba(43, 8, 8, 0), #11224D);
+    width: 2.5px;
     animation: 2s animateRight linear -1s infinite;
 }
 
+.animated-button span:nth-child(2) {
+    background: linear-gradient(to top, rgba(43, 8, 8, 0), #d92626);
+}
+
+.animated-button-1 span:nth-child(2) {
+    background: linear-gradient(to top, rgba(43, 8, 8, 0), #11224D);
+}
+
+.animated-button span:nth-child(3),
 .animated-button-1 span:nth-child(3) {
     bottom: 0px;
     left: 0px;
     width: 100%;
-    height: 2px;
-    background: linear-gradient(to right, rgba(43, 8, 8, 0), #11224D);
+    height: 2.5px;
     animation: 2s animateBottom linear infinite;
 }
 
+.animated-button span:nth-child(3) {
+    background: linear-gradient(to right, rgba(43, 8, 8, 0), #d92626);
+}
+
+.animated-button-1 span:nth-child(3) {
+    background: linear-gradient(to right, rgba(43, 8, 8, 0), #11224D);
+}
+
+.animated-button span:nth-child(4),
 .animated-button-1 span:nth-child(4) {
     top: 0px;
     left: 0px;
     height: 100%;
-    width: 2px;
-    background: linear-gradient(to bottom, rgba(43, 8, 8, 0), #11224D);
+    width: 2.5px;
     animation: 2s animateLeft linear -1s infinite;
+}
+
+.animated-button span:nth-child(4) {
+    background: linear-gradient(to bottom, rgba(43, 8, 8, 0), #d92626);
+}
+
+.animated-button-1 span:nth-child(4) {
+    background: linear-gradient(to bottom, rgba(43, 8, 8, 0), #11224D);
 }

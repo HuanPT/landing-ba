@@ -1,5 +1,6 @@
-.banner {
+#banner {
     position: relative;
+    margin-top: 70px;
 }
 
 .btn-banner {
@@ -8,6 +9,13 @@
     right: 0;
     top: 50%;
     bottom: 0;
+}
+
+/* Carousel */
+#banner .carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
 }
 
 @media screen and (max-width:992px) {
@@ -19,12 +27,13 @@
 @media screen and (max-width:768px) {
     .btn-banner {
         left: 70%;
+        top: 47%;
     }
 }
 
 @media screen and (max-width:576px) {
     .btn-banner {
         left: 60%;
-        top: 26%
+        top: 22%
     }
 }

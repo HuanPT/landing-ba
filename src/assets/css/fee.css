@@ -1,4 +1,5 @@
 #fee {
+    overflow: hidden;
     position: relative;
     background: transparent;
 }

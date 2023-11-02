@@ -1,9 +1,14 @@
 #achievement {
+    overflow: hidden;
     background: var(--white-color);
 }
 
 .achievement__video {
     position: relative;
+    width: 546px;
+    height: 330px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .achievement__video p {
@@ -12,8 +17,14 @@
     color: var(--white-color);
 }
 
+.btn__video {
+    position: absolute;
+    inset: 0;
+}
+
 .btn__video img {
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .btn__play {

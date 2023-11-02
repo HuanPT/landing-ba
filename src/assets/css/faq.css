@@ -3,6 +3,7 @@
 } */
 
 #faq {
+    overflow: hidden;
     position: relative;
     background-color: transparent;
 }
