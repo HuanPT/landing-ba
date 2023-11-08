@@ -1,6 +1,4 @@
 #teacher {
-    /* max-height: 120vh;
-    overflow: scroll; */
     position: relative;
     background-image: url("/img/bgTeacher.png");
     background-size: cover;
@@ -9,11 +7,6 @@
     background-attachment: fixed;
     padding-bottom: 24px;
 }
-
-/* 
-#teacher::-webkit-scrollbar {
-    display: none;
-} */
 
 .card__teacher {
     border-radius: 25px;
@@ -53,9 +46,9 @@
     content: "";
     position: absolute;
     right: 0;
-    bottom: -40px;
-    height: 40px;
-    width: 40px;
+    bottom: -25px;
+    height: 25px;
+    width: 25px;
     background-color: var(--blue-mid-color);
 }
 
@@ -95,4 +88,10 @@
     padding-inline: 12px;
     flex-direction: column;
     color: var(--black-color);
+}
+
+@media screen and (max-width:576px) {
+    .card__teacher-content {
+        padding: 4px 8px;
+    }
 }

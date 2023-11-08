@@ -4,10 +4,6 @@ import AOS from "aos";
 import "@fortawesome/fontawesome-free/js/all.min.js";
 import { Fancybox } from "@fancyapps/ui";
 
-import javascriptLogo from "../../public/img/javascript.svg";
-import viteLogo from "../../public/img/vite.svg";
-import { setupCounter } from "@js/counter.js";
-
 import "bootstrap/dist/js/bootstrap.bundle";
 import {
   backGoToTop,
@@ -18,27 +14,11 @@ import {
   updateIcon,
 } from "./helpers";
 import { setError, setSuccess, showErrorToast } from "./toast";
+import { viewTeachers } from "./view/viewTeachers";
+import { teacher } from "./fakeApiTeachers";
 
 var bootstrapButton = $.fn.button.noConflict(); // return $.fn.button to previously assigned value
 $.fn.bootstrapBtn = bootstrapButton; // give $().bootstrapBtn the Bootstrap functionality
-
-// document.querySelector("#app").innerHTML += `
-//   <div>
-//     <a href="https://vitejs.dev" target="_blank">
-//       <img src="${viteLogo}" class="logo" alt="Vite logo" />
-//     </a>
-//     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-//       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-//     </a>
-//     <h1>Hello Vite!</h1>
-//     <div class="card">
-//       <button id="counter" type="button"></button>
-//     </div>
-//     <p class="read-the-docs">
-//       Click on the Vite logo to learn more
-//     </p>
-//   </div>
-// `;
 
 const trackID = "";
 const form = document.querySelector("form");
@@ -85,6 +65,8 @@ const $navbarLinks = $(".navbar-nav>li>a");
 const $navbarToggler = $(".navbar-toggler");
 
 window.addEventListener("load", () => {
+  // viewTeachers
+  viewTeachers(teacher);
   // Scroll active navbar
   $(window).on("scroll", function () {
     const scrollPosition = $(this).scrollTop();
