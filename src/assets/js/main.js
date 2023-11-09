@@ -63,25 +63,32 @@ function addHandlerSubmit(form, handler) {
 
 const $navbarLinks = $(".navbar-nav>li>a");
 const $navbarToggler = $(".navbar-toggler");
+const navbarLinksArray = $navbarLinks.toArray();
 
 window.addEventListener("load", () => {
   // viewTeachers
   viewTeachers(teacher);
   // Scroll active navbar
+
   $(window).on("scroll", function () {
     const scrollPosition = $(this).scrollTop();
 
-    $navbarLinks.each(function () {
-      const target = $($(this).attr("href"));
-      const targetPosition = target.offset().top - 40;
-      const targetHeight = target.outerHeight();
+    // Sử dụng requestAnimationFrame cho sự kiện cuộn
+    window.requestAnimationFrame(() => {
+      for (let i = navbarLinksArray.length - 1; i >= 0; i--) {
+        const link = navbarLinksArray[i];
+        const target = $($(link).attr("href"));
+        const targetPosition = target.offset().top - 40;
+        const targetHeight = target.outerHeight();
 
-      if (
-        targetPosition <= scrollPosition &&
-        targetPosition + targetHeight > scrollPosition
-      ) {
-        $navbarLinks.removeClass("active");
-        $(this).addClass("active");
+        if (
+          targetPosition <= scrollPosition &&
+          targetPosition + targetHeight > scrollPosition
+        ) {
+          $navbarLinks.removeClass("active");
+          $(link).addClass("active");
+          break; // Dừng khi tìm thấy mục tiêu đầu tiên
+        }
       }
     });
   });

@@ -38,6 +38,7 @@
 
 .hexagon-gallery {
     text-align: center;
+    padding-inline: 12px;
     /* padding-bottom: 50px; */
     /* filter: drop-shadow(0px 20px 12px rgba(50, 50, 0, 0.5)) */
     filter: drop-shadow(0 0 2px #FA6900) drop-shadow(0 0 1px #FA6900) drop-shadow(0 0 1px #FA6900) drop-shadow(0 0 1px #FA6900)
@@ -48,13 +49,14 @@
     max-height: 550px;
     width: 100%;
     height: 100%;
+    min-height: 350px;
     display: inline-block;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     /* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); */
 }
 
 .hex #carouselTarget img {
-    max-height: 550px;
+    min-height: 500px;
 }
 
 #carouselTarget .carousel-indicators [data-bs-target] {
@@ -72,6 +74,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-inline: 12px;
 }
 
 .target__item {
@@ -109,12 +112,24 @@
 }
 
 @media screen and (max-width:1200px) {
+    .hexagon-gallery {
+        align-self: center;
+    }
+
+    .hex #carouselTarget img {
+        min-height: 450px;
+    }
+
     .target__item {
         max-width: 420px;
     }
 }
 
 @media screen and (max-width:992px) {
+    .hex #carouselTarget img {
+        min-height: 480px;
+    }
+
     .target__list {
         gap: 32px;
     }
@@ -125,5 +140,12 @@
 
     .target__item {
         max-width: 550px;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .hex #carouselTarget img {
+        min-height: 350px;
     }
 }
