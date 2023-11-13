@@ -12,10 +12,8 @@
 }
 
 /* Carousel */
-#banner .carousel-indicators [data-bs-target] {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
+#banner-slide:hover .owl-nav {
+    opacity: 1;
 }
 
 @media screen and (max-width:992px) {

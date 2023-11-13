@@ -5,6 +5,11 @@ import "@fortawesome/fontawesome-free/js/all.min.js";
 import { Fancybox } from "@fancyapps/ui";
 
 import "bootstrap/dist/js/bootstrap.bundle";
+import "owl.carousel";
+
+// import lazysizes
+// import "lazysizes";
+
 import {
   backGoToTop,
   checkInputs,
@@ -66,6 +71,37 @@ const $navbarToggler = $(".navbar-toggler");
 const navbarLinksArray = $navbarLinks.toArray();
 
 window.addEventListener("load", () => {
+  $("#banner-slide").owlCarousel({
+    loop: true, // lặp lại các item
+    margin: 10, // Khoảng cách giữa các item
+    nav: true, // thanh điều hướng
+    dots: true, // dấu chấm
+    autoplay: true,
+    autoplayHoverPause: true, //hover sẽ tạm dừng play
+    autoplayTimeout: 7000,
+    smartSpeed: 700,
+    navText: [
+      `<span aria-label= "Previous">
+        <i class="fa-solid fa-angle-left"></i>
+      </span>`,
+
+      `<span aria-label= "Next">
+        <i class="fa-solid fa-angle-right"></i>
+      </span>`,
+    ],
+    items: 1,
+  });
+
+  // targetSlide
+  $("#target__slide").owlCarousel({
+    loop: true, // lặp lại các item
+    margin: 10, // Khoảng cách giữa các item
+    dots: true, // dấu chấm
+    autoplay: true,
+    autoplayTimeout: 5000,
+    smartSpeed: 500,
+    items: 1,
+  });
   // viewTeachers
   viewTeachers(teacher);
   // Scroll active navbar

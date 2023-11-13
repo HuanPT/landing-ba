@@ -12,7 +12,8 @@
     content="Trong Xu Thế Khởi Nghiệp Business Analysis - Trở Thành Nền Tảng Cho Quản Lý Dự Án và Phát Triển Công Nghệ Cho Bất Kể Công Ty / Dự Án Nào." />
   <meta name="Description"
     content="Trong Xu Thế Khởi Nghiệp Business Analysis - Trở Thành Nền Tảng Cho Quản Lý Dự Án và Phát Triển Công Nghệ Cho Bất Kể Công Ty / Dự Án Nào." />
-  <!-- <meta property="og:image" content="https://techmaster.vn/resources/image/react-native.png" /> -->
+  <meta property="og:image" content="https://techmaster.vn/resources/image/hoclacoviec.jpg">
+
   <meta property="og:image:width" content="600" />
   <meta property="og:image:height" content="315" />
   <meta property="og:url" content="https://ba.techmaster.vn/" />
@@ -31,9 +32,6 @@
   <!-- async CSS -->
   <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');"
     href="https://fonts.googleapis.com/css2?family=Lato&display=swap" />
-
-  <!-- AOS Css -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
 
   <!-- no-JS fallback -->
   <noscript>
@@ -59,8 +57,8 @@
           </svg>
 
           <!-- <svg class="menu__icon">
-                                <use href="/img/icon.svg#icon-xmark"></use>
-                            </svg> -->
+            <use href="/img/icon.svg#icon-xmark"></use>
+          </svg> -->
         </button>
 
         <!-- Navigation links -->
@@ -100,63 +98,46 @@
   <section id="banner">
     <div class="container-fluid g-0">
       <div class="banner">
-        <div id="carouselBanner" class="carousel slide d-none d-sm-block" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <!-- <img src="..." class="d-block w-100" alt="..."> -->
-              <img src="/img/bannerPc.jpg" loading="lazy" alt="banner">
-              <div class="btn-banner">
-                <button class="btn btn-blue animated-button" data-bs-toggle="modal" data-bs-target="#Modal">
-                  Đăng Ký
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </button>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="/img/banner2.png" loading="lazy" alt="banner">
-              <div class="btn-banner">
-                <button class="btn btn-blue animated-button" data-bs-toggle="modal" data-bs-target="#Modal">
-                  Đăng Ký
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </button>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="/img/banner3.png" loading="lazy" alt="banner">
-              <div class="btn-banner">
-                <button class="btn btn-primary animated-button-1" data-bs-toggle="modal" data-bs-target="#Modal">
-                  Đăng Ký
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </button>
-              </div>
+        <div id="banner-slide" class="d-none d-sm-block owl-carousel owl-theme">
+          <div class="banner__item">
+            <img src="/img/bannerPc.jpg" alt="banner">
+            <div class="btn-banner">
+              <button class="btn btn-blue animated-button" data-bs-toggle="modal" data-bs-target="#Modal">
+                Đăng Ký
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="banner__item">
+            <img src="/img/banner2.png" loading="lazy" alt="banner">
+            <div class="btn-banner">
+              <button class="btn btn-blue animated-button" data-bs-toggle="modal" data-bs-target="#Modal">
+                Đăng Ký
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+          <div class="banner__item">
+            <img src="/img/banner3.png" loading="lazy" alt="banner">
+            <div class="btn-banner">
+              <button class="btn btn-primary animated-button-1" data-bs-toggle="modal" data-bs-target="#Modal">
+                Đăng Ký
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
         </div>
         <div class="d-block d-sm-none">
-          <img src="/img/bannerMobile.jpg" loading="lazy" alt="banner">
+          <img src="/img/bannerMobile.jpg" alt="banner">
           <div class="btn-banner">
             <button class="btn btn-blue animated-button" data-bs-toggle="modal" data-bs-target="#Modal">
               Đăng Ký
@@ -190,44 +171,19 @@
         </div>
       </div>
       <div class="row g-0 pb-5">
-        <div class="col-12 col-lg-6 m-auto">
+        <div class="col-12 col-lg-6 align-self-center">
           <div class="hexagon-gallery">
             <div data-aos="zoom-in" data-aos-duration="300">
               <div class="hex">
-                <div id="carouselTarget" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselTarget" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselTarget" data-bs-slide-to="1"
-                      aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselTarget" data-bs-slide-to="2"
-                      aria-label="Slide 3"></button>
-                    <!-- <button type="button" data-bs-target="#carouselTarget" data-bs-slide-to="3"
-                      aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselTarget" data-bs-slide-to="4"
-                      aria-label="Slide 5"></button>
-                    <button type="button" data-bs-target="#carouselTarget" data-bs-slide-to="5"
-                      aria-label="Slide 6"></button> -->
+                <div id="target__slide" class="owl-carousel owl-theme">
+                  <div class="target__slide-item">
+                    <img src="/img/excellentStudents/7.jpg" alt="Target image">
                   </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="3000">
-                      <img src="/img/excellentStudents/7.jpg" loading="lazy" alt="Target image">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                      <img src="/img/excellentStudents/8.jpg" loading="lazy" alt="Target image">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                      <img src="/img/excellentStudents/9.jpg" loading="lazy" alt="Target image">
-                    </div>
-                    <!-- <div class="carousel-item active" data-bs-interval="3000">
-                      <img src="/img/excellentStudents/3.jpg" alt="Target image">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                      <img src="/img/excellentStudents/5.jpg" alt="Target image">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                      <img src="/img/excellentStudents/6.jpg" alt="Target image">
-                    </div> -->
+                  <div class="target__slide-item">
+                    <img src="/img/excellentStudents/8.jpg" loading="lazy" alt="Target image">
+                  </div>
+                  <div class="target__slide-item">
+                    <img src="/img/excellentStudents/9.jpg" loading="lazy" alt="Target image">
                   </div>
                 </div>
               </div>
