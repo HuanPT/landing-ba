@@ -39,9 +39,7 @@
 .hexagon-gallery {
     text-align: center;
     padding-inline: 12px;
-    /* padding-bottom: 50px; */
-    /* filter: drop-shadow(0px 20px 12px rgba(50, 50, 0, 0.5)) */
-    filter: drop-shadow(0 0 2px #FA6900) drop-shadow(0 0 1px #FA6900) drop-shadow(0 0 1px #FA6900) drop-shadow(0 0 1px #FA6900)
+    filter: drop-shadow(0px 0px 8px #FA6900)
 }
 
 .hex {
@@ -53,7 +51,6 @@
     min-height: 500px;
     display: inline-block;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    /* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); */
 }
 
 #target__slide {

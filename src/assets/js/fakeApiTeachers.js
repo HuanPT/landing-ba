@@ -39,24 +39,35 @@ export const teacher = [
       "Cựu Visual Designer tại Torchlight",
     ],
   },
+
   {
     id: "5",
-    name: "Vũ Thanh Tiến",
-    image: "/img/teachers/vuThanhTien.png",
-    position: "Chuyên gia tại IBPO",
-    descriptions: [
-      "16 năm kinh nghiệm trong lĩnh vực CNTT tại các đơn vị phát triển phần mềm như Công ty MISA, tập đoàn Novaon, Viettelimex.",
-      "Kinh nghiệm huấn luyện lập trình viên, BA trong các trung tâm phần mềm, định hướng nghề nghiệp trong mảng CNTT.",
-    ],
-  },
-  {
-    id: "6",
     name: "Nguyễn Thanh Quyên",
     image: "/img/teachers/nguyenThanhQuyen.png",
     position: "Chuyên gia tại IBPO",
     descriptions: [
       "15 năm kinh nghiệm trong lĩnh vực Quy trinh quản trị chất lượng và Quy trinh Phát triển phần mềm tại các Công ty lớn như GMO, MISA, FSOFT.",
       "Kiến thức chuyên sâu lĩnh vực quản lý chất lượng, quản trị dự án phần mềm, an ninh thông tin và các chuẩn quốc tế ISO 9001:2015, ISO/IEC 27001:2013, CMMI, Agile Scrum",
+    ],
+  },
+  {
+    id: "6",
+    name: "Bùi Hiên",
+    image: "/img/teachers/buiHien.jpg",
+    position: "Giảng viên tại Techmaster",
+    descriptions: [
+      "Lập trình viên Fullstack tại Techmaster Việt Nam.",
+      "Giảng viên các khóa lập trình ngắn và dài hạn tại Techmaster.",
+    ],
+  },
+  {
+    id: "7",
+    name: "Vũ Thanh Tiến",
+    image: "/img/teachers/vuThanhTien.png",
+    position: "Chuyên gia tại IBPO",
+    descriptions: [
+      "16 năm kinh nghiệm trong lĩnh vực CNTT tại các đơn vị phát triển phần mềm như Công ty MISA, tập đoàn Novaon, Viettelimex.",
+      "Kinh nghiệm huấn luyện lập trình viên, BA trong các trung tâm phần mềm, định hướng nghề nghiệp trong mảng CNTT.",
     ],
   },
 ];
