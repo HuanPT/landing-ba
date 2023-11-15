@@ -10,7 +10,7 @@
 
 .card__teacher {
     border-radius: 25px;
-    max-width: 310px;
+    max-width: 345px;
     height: 100%;
     margin-inline: auto;
     background: var(--white-color);
