@@ -7,7 +7,7 @@ export const viewTeachers = (projects) => {
       .join("");
 
     const teacherHTML = `
-      <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-4">
+      <div class="col-12 col-sm-6 col-lg-4 mt-4">
         <div class="h-100" data-aos="${cardFade}" data-aos-duration="400">
           <div class="card__teacher">
             <div class="img__content">

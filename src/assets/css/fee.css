@@ -20,8 +20,10 @@
 }
 
 .card__fee-title {
-    color: var(--primary-color);
     margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--primary-color);
 }
 
 .price {

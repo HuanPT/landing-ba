@@ -7,7 +7,8 @@
 .svg__icon {
     width: 30px;
     height: 30px;
-    color: var(--techmaster-color);
+    /* color: var(--techmaster-color); */
+    color: var(--blue-color);
 }
 
 .contact__hotline {
@@ -49,9 +50,10 @@
 }
 
 .map {
-    padding: 8px;
+    /* padding: 8px; */
     border-radius: 8px;
-    background-color: #1C97C7;
+    /* background-color: #1C97C7; */
+    border: 1px solid var(--blue-color);
 }
 
 .map iframe {
