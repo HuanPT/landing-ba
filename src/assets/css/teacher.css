@@ -1,11 +1,13 @@
 #teacher {
-    position: relative;
-    background-image: url("/img/bgTeacher.png");
+    /* background-image: url("/img/bgTeacher.png");
     background-size: cover;
     background-position: 50% 0%;
     background-repeat: repeat;
     background-attachment: fixed;
-    padding-bottom: 24px;
+    padding-bottom: 24px; */
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;
 }
 
 .card__teacher {
@@ -14,7 +16,7 @@
     height: 100%;
     margin-inline: auto;
     background: var(--white-color);
-    box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 4px 3px rgba(171, 171, 171, 0.6);
 }
 
 .img__content,

@@ -76,7 +76,7 @@ window.addEventListener("load", () => {
     margin: 10, // Khoảng cách giữa các item
     nav: true, // thanh điều hướng
     dots: true, // dấu chấm
-    autoplay: true,
+    autoplay: false,
     autoplayHoverPause: true, //hover sẽ tạm dừng play
     autoplayTimeout: 7000,
     smartSpeed: 700,

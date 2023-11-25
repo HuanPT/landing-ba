@@ -1,6 +1,7 @@
 #journey {
     position: relative;
-    background-image: url("/img/bgJourney.jpg");
+    /* background-image: url("/img/bgJourney.jpg"); */
+    background-color: var(--blue-light-color);
     background-size: cover;
     background-position: 50% 0%;
     background-repeat: repeat;

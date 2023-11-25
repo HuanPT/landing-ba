@@ -116,7 +116,7 @@ export const postRegister = async function (data) {
       Phone: data.phone,
       Note: data.note,
       Link: id,
-      ItemId: "g8S0FI_6",
+      ItemId: "59rHObvj",
     };
     const res = await AJAX(API_URL, req);
     clearInputs();
